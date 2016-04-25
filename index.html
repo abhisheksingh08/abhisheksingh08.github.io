@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abhishek Singh</title>
+	<!--fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Abhishek Singh" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- js -->
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner" id="home">
+		<div class="container"> 
+			<div class="top-header row">
+				<script src="js/classie.js"></script>
+				<!--top-nav---->
+				<div class="logo">
+					<a href="index.html"></a>
+				</div>
+				<div class="top-nav">
+					<div class="nav-icon">
+						<a href="#" class="right_bt" id="activator"><span> </span> </a>
+					</div>
+					<div class="box" id="box">
+						<div class="box_content">        					                         
+							<div class="box_content_center">
+								<div class="form_content">
+									<div class="menu_box_list">
+										<ul>
+
+											<li><a class="scroll" href="#about"><span>about</span></a></li>
+											
+											
+											<li><a class="scroll" href="#myskills"><span>My Skills</span></a></li>
+											<li><a class="scroll" href="#education"><span>Education</span></a></li>
+											<li><a class="scroll" href="#workexperience"><span>Work Experience</span></a></li>
+											<li><a class="scroll" href="#services"><span>Services</span></a></li>
+
+											<li><a class="scroll" href="#contact"><span>Contact</span></a></li>
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+									<a class="boxclose" id="boxclose"> <span> </span></a>
+								</div>                                  
+							</div> 	
+						</div> 
+					</div>       	  
+				</div>
+
+				<script type="text/javascript">
+					var $ = jQuery.noConflict();
+					$(function() {
+						$('#activator').click(function(){
+							$('#box').animate({'top':'0px'},900);
+						});
+						$('#boxclose').click(function(){
+							$('#box').animate({'top':'-1000px'},900);
+						});
+					});
+					$(document).ready(function(){
+							//Hide (Collapse) the toggle containers on load
+							$(".toggle_container").hide(); 
+							//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+							$(".trigger").click(function(){
+								$(this).toggleClass("active").next().slideToggle("slow");
+									return false; //Prevent the browser jump to the link anchor
+								});
+
+						});
+					</script>
+
+					<div class="clearfix"> </div>
+				</div>
+				<div class="banner-info">
+					<div class="banner-left">
+						<img src="images/1.png" alt=""/>
+					</div>
+					<div class="banner-right">
+						<h2>ABHISHEK SINGH</h2>
+						<div class="border"></div>
+						<h2>WEB DESIGNER</h2>
+						
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="about text-center" id="about">
+			<div class="container">
+				<h3>ABOUT ME</h3>
+				<div class="strip text-center"><img src="images/about.png" alt=" "/></div>
+				<p>I'm a B.Tech/CSE 2nd year student from VIT Chennai. I've been working in Web Development for the past 6 months. I'm good in front end development using HTML, CSS, Javascript and JQuery but I can also perform simple back end development in PHP and MySQL. In my free time, I like to make art and do illustrations. I'm a beginner in this field and I'm always ready to learn more and grow.</p>
+				<ul>
+					<li><a class="fb" href="https://www.facebook.com/abhishekscindia?ref=bookmarks"></a></li>
+					
+					<li><a class="goog" href="https://plus.google.com/u/0/109666494468252909022"></a></li>
+					
+				</ul>
+			</div>
+		</div>
+		<!--//about-->
+		<div class="about-back"></div>
+		<!--my skill-->
+		<div class="my-skills text-center" id="myskills">
+			<div class="container">
+				<h3>MY SKILLS</h3>
+				<div class="strip text-center"><img src="images/skill.png" alt=" "/></div>
+				<div class="skill-grids">
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-1"></div>
+						<p>After Effects</p>
+					</div>
+					<div class="col-md-2 skills-grid text-center">
+						<div class="circle" id="circles-2"></div>
+						<p>C</p>
+					</div>
+					<div class="col-md-2 skills-grid text-center">
+						<div class="circle" id="circles-3"></div>
+						<p>CSS</p>
+					</div>
+					<div class="col-md-2 skills-grid text-center">
+						<div class="circle" id="circles-4"></div>
+						<p>C++</p>
+					</div>
+					<div class="col-md-2 skills-grid text-center">
+						<div class="circle" id="circles-5"></div>
+						<p>Photoshop</p>
+					</div>
+					
+					<div class="clearfix"> </div>
+					<script type="text/javascript" src="js/circles.js"></script>
+					<script>
+						var colors = [
+						['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff']
+						];
+						for (var i = 1; i <= 5; i++) {
+							var child = document.getElementById('circles-' + i),
+							percentage = 30 + (i * 10);
+
+							Circles.create({
+								id:         child.id,
+								percentage: percentage,
+								radius:     80,
+								width:      10,
+								number:   	percentage / 1,
+								text:       '%',
+								colors:     colors[i - 1]
+							});
+						}
+						
+					</script>
+				</div>
+			</div>	
+		</div>
+		<!--//my skill-->
+		<div class="my-skill-back"></div>
+		<!--education-->
+		<div class="education text-center" id="education">
+			<div class="container">
+				<div class="edu-info">
+					<h3>EDUCATION</h3>
+				</div>
+				<div class="strip text-center"><img src="images/edu.png" alt=" "/></div>
+				<div class="edu-grids">
+					<div class="col-md-4 edu-grid">
+						<p>2008 - 2010</p><span>High School</span>
+						<img src="images/arrow.png" alt=""/>
+						<div class="edu-border">
+							<div class="edu-grid-master">
+								<h3>High School</h3>
+								<h4>The Scindia School</h4>
+							</div>
+							<div class="edu-grid-info">
+								<h5></h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 edu-grid">
+						<p>2011 - 2013</p><span>Inter School</span>
+						<img src="images/arrow.png" alt=""/>
+						<div class="edu-border">
+							<div class="edu-grid-master">
+								<h3>Inter School</h3>
+								<h4>Mahatma Hansraj</h4>
+							</div>
+							<div class="edu-grid-info">
+								<h5></h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 edu-grid">
+						<p>2014 - Present</p><span>Graduated</span>
+						<img src="images/arrow.png" alt=""/>
+						<div class="edu-border">
+							<div class="edu-grid-master">
+								<h3>Computer Science Engg.</h3>
+								<h4>Vellore Institute Of Technology</h4>
+							</div>
+							<div class="edu-grid-info">
+								<h5></h5>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+		</div>
+		<!--//education-->
+		<div class="strip-border"><p></p></div>
+		<!--work-->
+		<div class="work-experience text-center" id="workexperience">
+
+			<div class="container">
+				<div class="work-info">
+					<h3>WORK EXPERIENCE</h3>
+				</div>
+				<div class="strip text-center"><img src="images/work.png" alt=" "/></div>
+				<div class="work-grids">
+					<div class="col-md-4 w-grid">
+						<div class="work-grid">
+							<h3>Web Development</h3>
+							<div class="work-grid-info">
+								<h4>Vibrance'16</h4>
+
+								<p>VIT University, Chennai campus, is now building on the huge leap it took last year, by hosting the 2nd edition its national cultural festival, from 18th to 19th of March, 2016.This carnival will be filled with numerous activities organized by the various schools of the University.  </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 w-grid">
+						<div class="work-grid">
+							<h3>Web Web Development & Design</h3>
+							<div class="work-grid-info">
+								<h4>Zuura International</h4>
+
+								<p>
+
+									'ZUURA FORMULA RACING' is a dream group of students from our VIT University. Group of students dreamt of researching and building car to whicH they have constantly encouraged the dream of the students with our support, advice and guidance.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 w-grid">
+							<div class="work-grid">
+								<h3>Web Web Development & Design</h3>
+								<div class="work-grid-info">
+									<h4>Raghvendra Hospital Pvt. Ltd</h4>
+
+									<p>We improve the patient health,
+										research shows that a patient's environment has a tremendous impact on healing. so... things like music, art, and technology can become experiences that actually help each human heal. "EDUCATION-HEALTH-CARE"  </p>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<!--//work-->
+				<div class="services-back"></div>
+
+				<!--services-->
+				<div class="services text-center" id="services">
+					<div class="container">
+						<div class="ser-info">
+							<h3>SERVICES</h3>
+						</div>
+						<div class="strip text-center"><img src="images/ser.png" alt=" "/></div>
+						<div class="ser-grids">
+							<div class="col-md-3 ser-grid">
+								<div class="ser-imagea"></div>
+								<h3>Web Design</h3>
+								<p>.</p>
+							</div>
+							<div class="col-md-3 ser-grid">
+								<div class="ser-imageb"></div>
+								<h3>Graphic Design</h3>
+								<p></p>
+							</div>
+							<div class="col-md-3 ser-grid">
+								<div class="ser-imagec"></div>
+								<h3>Content Writer</h3>
+								<p></p>
+							</div>
+							<div class="col-md-3 ser-grid">
+								<div class="ser-imaged"></div>
+								<h3>Development</h3>
+								<p></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<!--//services-->
+				<!--portfolio-->
+
+
+				<div class="client-back"></div>
+
+				<div class="contact-back"></div>
+				<!--contact-->
+				<div class="contact" id="contact">
+					<div class="container">
+						<div class="contact-info text-center">
+							<h3>CONTACT</h3>
+							<div class="strip text-center"><img src="images/con1.png" alt=" "/></div>
+						</div>
+						<div class="contact-grids">
+							<div class="col-md-5 contact-left">
+								<h3>Say Hi to Me</h3>
+								<div class="stripb"></div>
+								<ul>
+									<li>Vellore Institute Of Technology, </li>
+									<li>Chennai Campus</li>
+									<li>Chennai,India</li>
+									<li>+91 9962  407  447</li>
+									<li><a href="abhishek.singh2014@vit.ac.in">abhishek.singh2014@vit.ac.in</a></li>
+
+								</ul>
+							</div>
+							<div class="col-md-7 contact-right">
+								<h3>Drop Me A Line</h3>
+								<div class="stripb"></div>
+								<form action="MAILTO:abhishek.singh2014@vit.ac.in" method="post" enctype="text/plain">
+									<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+									<input type="text" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required="">
+									<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>
+									<input type="submit" value="SEND">
+								</form>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<!--//contact-->
+				<div class="footer-top"></div>
+				<!--resume-->
+				
+				<!--//resume-->
+
+				<!--footer-->
+				
+				<!--//footer-->
+				<!-- here stars scrolling icon -->
+				<script type="text/javascript">
+					$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+
+				$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+		</script>
+		<!-- //here ends scrolling icon -->
+	</body>
+	</html>
